@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/EsDefectivo.js"></script>
+    <title>Numero Deficiente</title>
+</head>
+<style>
+    p{
+        padding: 10px 20px; 
+        font-size: 2rem;
+        text-align: center;
+        font-family: Verdana;
+    }
+</style>
+<body>
+    <script>
+        let x;
+        do {
+            x = prompt('Ingrese valor');
+            x = parseInt(x);
+        } while (isNaN(x) || x == 0);
+
+        cartel = '<p style="color: red">No es Defectivo</p>';
+
+        if (EsDefectivo(x) == true) { cartel = '<p style="color: green;">Es Defectivo</p>'; }
+
+        document.write(cartel);
+    </script>
+</body>
+
+</html>

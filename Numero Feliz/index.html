@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Feliz</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="tittle">Numero Feliz</h1>
+    </header>
+    <main>
+        <section class="section">
+            <article class="left">
+                <h2 class="paragraph">¿Es Feliz?</h2>
+                <div class="newNum">
+                    <input type="number" name="newNumber" id="newNum">
+                    <button type="submit" onclick="newNum()">
+                        CONSULTAR
+                    </button>
+                </div>
+            </article>
+            <article class="right">
+                <h2 class="paragraph">Comprobación</h2>
+                <div class="comprobacion">
+                    <p class="paragraph" id="verify"></p>
+                    <script>
+                        function newNum() {
+                            let num = document.getElementById('newNum').value;
+                            EsFeliz(num);
+                        }
+                    </script>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
