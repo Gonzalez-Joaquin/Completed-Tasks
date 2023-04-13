@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Decinfectando Palabras</title>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="tittle">Decinfectando Palabras</h1>
+    </header>
+    <main class="main">
+        <div class="ctn">
+            <input type="text" placeholder="Letras Infectadas" id="infected">
+            <input type="text" placeholder="Ingrese la palabra" id="newText" class="text">
+            <button type="submit" onclick="decifrar()">Enviar</button>
+        </div>
+        <div class="decifrado ctn">
+            <h2 class="tittle" style="color: #161616;">Palabra Decifrada:</h2>
+            <div class="resultado">
+                <p class="text" id="replaceText"></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
