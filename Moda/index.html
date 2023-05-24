@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <h1 class="tittle">Moda</h1>
+        </header>
+        <section class="section">
+            <article class="article">
+                <div class="popUp" id="alert">
+                    <div class="popUp-ctn">
+                        <h3 class="alert">ALERTA!!</h3>
+                        <p class="alert-text">Por favor ingrese un numero valido. ( En el rango de 1 y 600 )</p>
+                        <button class="alert-button" onclick="Alert(1)">Cerrar</button>
+                    </div>
+                </div>
+                <div class="ctn">
+                    <div class="newDate">
+                        <h2 class="tittle">Digite la cantidad de numeros a generar:</h2>
+                        <div class="ctn-newDate">
+                            <input type="number" id="numero">
+                            <button type="submit" onclick="buttonModa()">MODA</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="article" style="display: none;">
+                <div class="ctn">
+                    <h3 class="tittle">Input</h3>
+                    <div class="ctn-input" id="Input">
+
+                    </div>
+                </div>
+                <div class="ctn">
+                    <h3 class="tittle">Output</h3>
+                    <div class="ctn-input">
+                        <h2 class="tittle" id="num">La moda es: </h2>
+                        <h2 class="tittle" id="rep">Con un total de: </h2>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
