@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --back: #F5F5F5;
+    --font: #252525;
+    --details: #1C768F;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI';
+    background: var(--back);
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    display: grid;
+    place-items: center;
+    background: var(--font);
+    color: var(--back);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.section {
+    margin: auto;
+    width: 90%;
+    padding: .5em;
+}
+
+.title {
+    font-size: 2vw;
+}
+
+.text {
+    font-size: 1.50vw;
+}
+
+.btn {
+    padding: .5em 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2em;
+    background-color: var(--details);
+    outline: 0;
+    border: 2px solid var(--details);
+    border-radius: 5px;
+    margin: .5em;
+    color: var(--back);
+    transition: ease .2s;
+}
+
+.btn:is(:active, :hover, :focus) {
+    cursor: pointer;
+    background: var(--font);
+    border-color: var(--font);
+}
+
+.form-ctn {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+
+    & .form{
+        max-width: 31%;
+    }
+}
+
+.form {
+    margin: .5em;
+    border: 1px solid var(--font);
+    width: 100%;
+    padding: .5em;
+    border-radius: 5px;
+    position: relative;
+}
+
+.form-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.form-back {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--back);
+    border-radius: 5px;
+}
+
+input {
+    padding: .5em 1em;
+    outline: 0;
+    border: 1px solid var(--details);
+    border-radius: .2em;
+    font-weight: 600;
+}
+
+.title.t-form {
+    text-align: center;
+}
+
+.form-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkbox{
+    margin-right: .6em;
+}
+
+#rootDeportes{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.article{
+    margin-block: 1em;
+} 

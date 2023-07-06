@@ -1,0 +1,389 @@
+:root {
+    --back: #F7F6FB;
+    --yellow: #FFDD02;
+    --ligthBlue: #00919C;
+    --blue: #002782;
+    --dark: #292F36;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--dark);
+    font-family: monospace;
+    color: var(--back);
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background: #161616;
+}
+
+.h.flex {
+    width: 90%;
+    justify-content: space-between;
+}
+
+.h-title {
+    letter-spacing: .2em;
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.h-link {
+    text-transform: uppercase;
+    font-size: large;
+    border: 1px solid var(--back);
+    padding: .5em 1em;
+    border-radius: 3px;
+    transition: all ease-out .2s;
+}
+
+.h-link:hover {
+    cursor: pointer;
+    color: var(--dark);
+    font-weight: bold;
+    background-color: var(--back);
+}
+
+.h-link:active {
+    color: var(--back);
+    background: var(--dark);
+}
+
+#sectionTitle {
+    font-size: x-large;
+    text-transform: capitalize;
+}
+
+.main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-self: stretch;
+}
+
+/* ---- Nav ---- */
+
+.nav {
+    width: 4%;
+    height: 100%;
+    background: #161616;
+    transition: width ease-out .5s;
+}
+
+.nav:hover {
+    width: 30%;
+
+    & .img-ctn {
+        width: 90%;
+    }
+
+    & .img {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+
+    & .list-inside {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+.nav-ul {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-ctn {
+    width: 50%;
+    transition: width linear .5s;
+}
+
+.img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s linear;
+}
+
+.list-inside {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transform: scale(50%);
+    transition: all ease-out .5s;
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.list__item {
+    width: 100%;
+    overflow: hidden;
+}
+
+.list__item--click {
+    cursor: pointer;
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__arrow {
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid var(--back);
+    transition: height .4s;
+    height: 0;
+}
+
+.nav__link {
+    font-size: x-large;
+    display: block;
+    padding: .5em 0;
+    transition: color linear .1s;
+}
+
+.nav__link--inside {
+    padding-left: .5em;
+    text-align: left;
+}
+
+.nav__link--inside:hover,
+.nav__link.outside:hover {
+    color: var(--yellow);
+}
+
+.nav__link--inside:active,
+.nav__link.outside:active {
+    color: var(--ligthBlue);
+}
+
+/* ---- Section ---- */
+
+.section {
+    width: 100%;
+    position: relative;
+}
+
+.article.flex {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#root-article {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.a-title {
+    font-size: xx-large;
+}
+
+.a-text {
+    margin-top: 5em;
+    font-size: larger;
+}
+
+/* ---- Form ---- */
+
+.articleForm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemArticle-title {
+    width: 100%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.articleTitle {
+    font-family: Verdana;
+    letter-spacing: 2px;
+}
+
+.articleText {
+    text-align: center;
+}
+
+.itemArticle-input,
+.itemArticle-output {
+    width: 50%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+}
+
+.articleTitle.item {
+    padding: 1em;
+}
+
+.itemArticle-content {
+    margin: auto;
+    height: 90%;
+    width: 90%;
+}
+
+.form {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--back);
+    color: var(--dark);
+}
+
+.ctn-form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.labelForm {
+    margin-bottom: .5em;
+    font-family: Verdana;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.inputForm {
+    width: inherit;
+    outline: 0;
+    border: 0;
+    background: 0;
+    border-bottom: 2px solid var(--dark);
+    color: var(--dark);
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    padding: .7em;
+}
+
+.inputForm:is(:hover, :active, :focus-visible) {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.buttonForm {
+    padding: .7em 1em;
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-family: Verdana;
+    letter-spacing: -.1em;
+    border: 0;
+    background: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-weight: bold;
+    border: 1px solid var(--dark);
+    border-radius: 2px;
+    width: 50%;
+    transition: all ease .1s;
+}
+
+.buttonForm:hover {
+    width: 70%;
+    cursor: pointer;
+}
+
+.buttonForm:active {
+    border-radius: 10px;
+    background: var(--dark);
+    color: var(--back);
+}
+
+.ctn-output {
+    max-height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--back);
+    color: var(--dark);
+    overflow-y: auto;
+}
+
+.ctn-output::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ctn-output::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 10px;
+}
+
+.labelOutput {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: large;
+}
+
+.result {
+    padding: .7em;
+    font-weight: bold;
+    font-size: large;
+}
+
+@media screen and (max-width: 700px) {
+    .itemArticle-input {
+        height: 10%;
+    }
+
+    .itemArticle-input,
+    .itemArticle-output {
+        height: 45%;
+    }
+
+    .itemArticle-input,
+    .itemArticle-content,
+    .itemArticle-output,
+    .itemArticle-title {
+        width: 100%;
+    }
+}
+
+/* ---- Footer ---- */
+
+.footer {
+    width: 100%;
+    height: 10%;
+    background: #161616;
+}
+
+.copy {
+    color: var(--dark);
+    font-size: large;
+    letter-spacing: .1em;
+}

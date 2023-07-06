@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./material/java-script.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Date</title>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <nav class="nav">
+                <a class="nav--links">Date - A</a>
+                <a class="nav--links">Date - B</a>
+                <a class="nav--links">Date - C</a>
+                <a class="nav--links">Date - D</a>
+            </nav>
+        </header>
+        <section class="section">
+            <article class="article active">
+                <h3 class="title">Calcular la cantidad de dias hasta que termine el año.</h3>
+                <form class="form" id="newYear">
+                    <div class="select-container">
+                        <select name="day" id="root-day">
+                            <option value="none">Dia</option>
+                        </select>
+
+                        <select name="month" id="root-month">
+                            <option value="none">Mes</option>
+                        </select>
+
+                        <select name="year" id="root-year">
+                            <option value="none">Año</option>
+                        </select>
+
+                        <button type="submit" class="button">Enviar Fecha</button>
+                    </div>
+                </form>
+                <p class="result" id="resultado-year"></p>
+            </article>
+            <article class="article">
+                <h3 class="title">Calcular cantidad de dias desde que somos campeones.</h3>
+                <form class="form" id="campeon">
+                    <div class="select-container">
+                        <button type="submit" class="button">Consultar</button>
+                    </div>
+                </form>
+                <p class="result" id="resultado-campeonato"></p>
+            </article>
+            <article class="article">
+                <h3 class="title">Años completos transcurridos.</h3>
+                <form class="form" id="completos">
+                    <label class="title">Fecha 1:</label>
+                    <div class="select-container">
+                        <select name="day" id="root-day">
+                            <option value="none">Dia</option>
+                        </select>
+
+                        <select name="month" id="root-month">
+                            <option value="none">Mes</option>
+                        </select>
+
+                        <select name="year" id="root-year">
+                            <option value="none">Año</option>
+                        </select>
+                    </div>
+
+                    <label class="title">Fecha 2:</label>
+                    <div class="select-container">
+                        <select name="day2" id="root-day">
+                            <option value="none">Dia</option>
+                        </select>
+
+                        <select name="month2" id="root-month">
+                            <option value="none">Mes</option>
+                        </select>
+
+                        <select name="year2" id="root-year">
+                            <option value="none">Año</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="button">Enviar Fecha</button>
+                </form>
+                <p class="result" id="resultado-fechas"></p>
+            </article>
+            <article class="article">
+                <h3 class="title">Es dia laborable?</h3>
+                <form class="form" id="laboral">
+                    <div class="select-container">
+                        <select name="day" id="root-day">
+                            <option value="none">Dia</option>
+                        </select>
+
+                        <select name="month" id="root-month">
+                            <option value="none">Mes</option>
+                        </select>
+
+                        <select name="year" id="root-year">
+                            <option value="none">Año</option>
+                        </select>
+
+                        <button type="submit" class="button">Enviar Fecha</button>
+                    </div>
+                </form>
+                <p class="result" id="resultado-diaLaboral"></p>
+            </article>
+        </section>
+    </main>
+    <script src="./js/form.js"></script>
+    <script src="./js/a.js"></script>
+    <script src="./js/b.js"></script>
+    <script src="./js/c.js"></script>
+    <script src="./js/d.js"></script>
+</body>
+
+</html>

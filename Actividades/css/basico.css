@@ -1,0 +1,45 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.article {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.desactive {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}

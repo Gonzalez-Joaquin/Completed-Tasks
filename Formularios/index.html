@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./material/java-script.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Formularios</h1>
+    </header>
+    <section class="section">
+        <article class="article">
+            <h3 class="title">Punto - 24</h3>
+            <p class="text">
+                Crear un formulario con tres botones con las leyendas "1", "2" y "3". Mostrar un mensaje indicando qué
+                botón se presionó.
+            </p>
+            <form class="formButtons" id="formButtons">
+                <button class="btn btn-click">Botón 1</button>
+                <button class="btn btn-click">Botón 2</button>
+                <button class="btn btn-click">Botón 3</button>
+                <button class="btn btn-click">Botón 4</button>
+            </form>
+            <p class="text">Respuesta: <span id="btn-res"></span></p>
+        </article>
+        <article class="article">
+            <h3 class="title">Punto - 25</h3>
+            <div class="form-ctn">
+                <form class="form" id="problematica-1">
+                    <div class="form-front">
+                        <h3 class="title t-form">Problematica 1</h3>
+                        <p class="text">
+                            Crear un programa que permita cargar un entero en un text y al presionar un botón
+                            nos muestre dicho valor elevado al cubo (emplear la función alert).
+                        </p>
+                        <button class="btn btn-viewForms">
+                            Ver ejercicio
+                        </button>
+                    </div>
+                    <div class="form-back">
+                        <label class="text">Ingrese número:</label>
+                        <input type="number" name="number">
+                        <button type="submit" class="btn">enviar</button>
+                        <p class="text">Resultado: <span id="btn-resP1"></span></p>
+                    </div>
+                </form>
+                <form class="form" id="problematica-2">
+                    <div class="form-front">
+                        <h3 class="title t-form">Problematica 2</h3>
+                        <p class="text">
+                            Cargar dos números en objetos de tipo text y al presionar un botón, mostrar el mayor.
+                        </p>
+                        <button class="btn btn-viewForms">
+                            Ver ejercicio
+                        </button>
+                    </div>
+                    <div class="form-back">
+                        <label class="text">Ingrese número:</label>
+                        <input type="number" name="number1">
+                        <label class="text">Ingrese otro número:</label>
+                        <input type="number" name="number2">
+                        <button type="submit" class="btn">enviar</button>
+                        <p class="text">Resultado:<span id="btn-resP2"></span></p>
+                    </div>
+                </form>
+                <form class="form" id="problematica-3">
+                    <div class="form-front">
+                        <h3 class="title t-form">Problematica 3</h3>
+                        <p class="text">
+                            Cargar un nombre y un apellido en sendos text. Al presionar un botón, concatenarlos y
+                            mostrarlos
+                            en un tercer text (Tener en cuenta que podemos modificar la propiedad value de un objeto
+                            TEXT
+                            cuando ocurre un evento)
+                        </p>
+                        <button class="btn btn-viewForms">
+                            Ver ejercicio
+                        </button>
+                    </div>
+                    <div class="form-back">
+                        <label class="text">Ingrese texto:</label>
+                        <input type="text" name="name">
+                        <label class="text">Ingrese otro texto:</label>
+                        <input type="text" name="surname">
+                        <button type="submit" class="btn">enviar</button>
+                        <p class="text">Resultado: <span id="btn-resP3"></span></p>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <article class="article">
+            <h3 class="title">Punto - 26</h3>
+            <p class="text">
+                Crear dos input type password y supervisar que ambos esten igual a la hora de presionar un botón.
+            </p>
+            <form class="form" id="passForm">
+                <h3 class="title t-form">
+                    Password
+                </h3>
+                <div class="form-content">
+                    <label class="text">Password:</label>
+                    <input type="password" name="primer">
+
+                    <label class="text">Repita password:</label>
+                    <input type="password" name="segunda">
+
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+            <p class="text">Coinciden: <span id="res-pass"></span></p>
+        </article>
+        <article class="article">
+            <h3 class="title">
+                Punto - 27
+            </h3>
+            <div class="form-ctn">
+                <form class="form" id="problematica-4">
+                    <div class="form-front">
+                        <h3 class="title t-form">Problematica 4</h3>
+                        <p class="text">
+                            Confeccionar una página que muestre un objeto SELECT con distintos tipos de pizzas
+                            (Jamón y Queso, Muzzarella, Morrones). Al seleccionar una, mostrar en un objeto de tipo
+                            TEXT el precio de la misma.
+                        </p>
+                        <button class="btn btn-viewForms">
+                            Ver ejercicio
+                        </button>
+                    </div>
+                    <div class="form-back">
+                        <label class="text">Seleccione una pizza:</label>
+                        <select id="selectPizza" name="pizza">
+                            <option value="jamonyqueso">Jamón y Queso</option>
+                            <option value="muzzarella">Muzzarella</option>
+                            <option value="morrones">Morrones</option>
+                        </select>
+                        <label class="text">Precio:</label>
+                        <input type="text" id="precioTexto" readonly placeholder="Precio: $10">
+                    </div>
+                </form>
+                <form class="form" id="problematica-5">
+                    <div class="form-front">
+                        <h3 class="title t-form">Problematica 5</h3>
+                        <p class="text">
+                            Generar un presupuesto de un equipo de computación a partir de tres objetos de tipo SELECT
+                            que nos permiten seleccionar: Procesador, Monitor y Disco Duro. Al presionar un botón
+                            "Calcular",
+                            mostrar el presupuesto en un objeto de tipo TEXT.
+                        </p>
+                        <button class="btn btn-viewForms">
+                            Ver ejercicio
+                        </button>
+                    </div>
+                    <div class="form-back">
+                        <label class="text">Procesador:</label>
+                        <select id="selectProcesador" name="procesador">
+                            <option value="i3">Intel I3</option>
+                            <option value="i5">Intel I5</option>
+                            <option value="i7">Intel I7</option>
+                        </select>
+                        <label class="text">Monitor:</label>
+                        <select id="selectMonitor" name="monitor">
+                            <option value="20">Samsung 20'</option>
+                            <option value="22">Samsung 22'</option>
+                            <option value="26">Samsung 26'</option>
+                        </select>
+                        <label class="text">Disco Duro:</label>
+                        <select id="selectDiscoDuro" name="discoDuro">
+                            <option value="500gb">500 Gb</option>
+                            <option value="1tb">1 Tb</option>
+                            <option value="3tb">3 Tb</option>
+                        </select>
+                        <button id="btnCalcular" class="btn">Calcular</button>
+                        <label class="text">Presupuesto:</label>
+                        <input type="text" id="presupuestoTexto" readonly>
+                    </div>
+                </form>
+                <form class="form" id="problematica-6">
+                    <div class="form-front">
+                        <h3 class="title t-form">Problematica 6</h3>
+                        <p class="text">
+                            Confeccionar una página que permita seleccionar una pizza y la cantidad de unidades. Luego
+                            al
+                            presionar un botón calcular el importe a pagar.
+                        </p>
+                        <button class="btn btn-viewForms">
+                            Ver ejercicio
+                        </button>
+                    </div>
+                    <div class="form-back">
+                        <label class="text">Seleccione una pizza:</label>
+                        <select id="selectPizza" name="pizza">
+                            <option value="queso">Queso</option>
+                            <option value="jamonqueso">Jamón y queso</option>
+                            <option value="especial">Especial</option>
+                        </select>
+                        <label class="text">Cantidad:</label>
+                        <input type="number" id="cantidadPizzas" name="cantidad" min="1" value="1">
+                        <button id="btnCalcular" class="btn">Calcular</button>
+                        <label class="text">Importe total:</label>
+                        <input type="text" id="importeTotal" readonly>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <article class="article">
+            <h3 class="title">Punto - 28</h3>
+            <form class="form" id="formDeportes">
+                <h3 class="title t-form">¿Qué deportes te gustan?</h3>
+                <div id="rootDeportes"></div>
+                <button type="submit" class="btn deportes">Enviar</button>
+                <p class="text">Deportes elegidos: <span id="res-deportes"></span></p>
+            </form>
+        </article>
+    </section>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
