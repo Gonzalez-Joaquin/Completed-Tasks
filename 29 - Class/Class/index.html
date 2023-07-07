@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./material/java-script.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS - Class</title>
+</head>
+
+<body>
+    <main class="main flex">
+        <h1 class="title">CRectangulo</h1>
+        <div class="container flex">
+            <div class="ctn left flex">
+                <h2 class="title">Input</h2>
+                <form class="form">
+                    <label for="base" class="label">Base:</label>
+                    <input type="number" id="base" name="base" class="input">
+
+                    <br>
+
+                    <label for="altura" class="label">Altura:</label>
+                    <input type="number" id="altura" name="altura" class="input">
+
+                    <br>
+
+                    <input type="submit" value="Calcular" class="btn">
+                </form>
+            </div>
+            <div class="ctn rigth flex">
+                <h2 class="title">Output</h2>
+                <div id="resultadoCRectangulo" class="resultado"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/CRectangulo.js"></script>
+</body>
+
+</html>
